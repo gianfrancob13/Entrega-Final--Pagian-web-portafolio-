@@ -1,0 +1,102 @@
+//variables 
+
+$screensize1: 600px;
+$screensize2: 990px;
+$screensize3: 1080px;
+
+
+
+@media screen and (min-width:$screensize1) and (max-width:$screensize2) {
+       
+    div { 
+        section {  
+                .contactofooter {width: 150px;
+                height: 130px;}
+        }
+
+    }
+      
+    div {
+        div{
+            section {  
+                    .imgperfil { width: 300px;
+                    height: 300px;
+                    display:block;
+                    margin:auto;}
+                }
+            } 
+        } 
+        
+    }
+
+
+    @media screen and (min-width:$screensize2) and (max-width:$screensize3){
+    div { 
+        section {  
+                .contactofooter {width: 150px;
+                height: 130px;}
+        }
+
+    }
+    
+    body {
+        div {
+            div { 
+                div { 
+                    nav { 
+                        div{
+                            .flex{ 
+                                display: flex;  flex-direction: row; 
+                                justify-content: flex-end;
+                            }
+                        }
+                        }
+
+                    }
+                    
+                }
+                
+            }  
+        }
+   
+}
+      
+
+div {
+    h1 { 
+        .margen {margin: 15px;
+
+        }
+    }
+}
+
+body {overflow-x: hidden;
+    padding: 10px;
+    margin: 10px;}
+
+body {
+    div {
+        div { 
+            div { 
+                nav { 
+                    .logonav { width: 150px;
+                    height: 150px;
+
+                    }
+
+                }
+                
+            }
+            
+        }  
+    }
+}
+
+
+
+div{ 
+    .divdiv {margin: 20px;
+
+    }
+}
+
