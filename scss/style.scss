@@ -4,7 +4,8 @@ $screensize1: 600px;
 $screensize2: 990px;
 $screensize3: 1080px;
 
-
+@import "map";
+@import "extend";
 
 @media screen and (min-width:$screensize1) and (max-width:$screensize2) {
        
@@ -70,9 +71,7 @@ div {
     }
 }
 
-body {overflow-x: hidden;
-    padding: 10px;
-    margin: 10px;}
+
 
 body {
     div {
@@ -99,4 +98,9 @@ div{
 
     }
 }
+
+
+
+
+
 

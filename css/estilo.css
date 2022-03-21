@@ -1,3 +1,31 @@
+body {
+  overflow-x: hidden;
+  padding: 10px;
+  margin: 10px; }
+
+.boton, .boton-acept, .boton-cancel {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  bordre: 1px solid black;
+  bordre-radius: 20px; }
+
+.boton-acept {
+  color: green;
+  background-color: white;
+  bordre: 1px solid green; }
+
+.boton-cancel {
+  color: red;
+  background-color: white;
+  bordre: 1px solid red; }
+
+div section .contactofooter {
+  height: 90px;
+  width: 100px; }
+
 @media screen and (min-width: 600px) and (max-width: 990px) {
   div section .contactofooter {
     width: 150px;
@@ -19,11 +47,6 @@
 
 div h1 .margen {
   margin: 15px; }
-
-body {
-  overflow-x: hidden;
-  padding: 10px;
-  margin: 10px; }
 
 body div div div nav .logonav {
   width: 150px;

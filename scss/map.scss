@@ -1,0 +1,14 @@
+//sass 2
+
+$estilo:( 
+    over: hidden,
+    padd: 10px,
+    margen: 10px,
+);
+
+
+body{ 
+    overflow-x:map-get($estilo,over);
+    padding:map-get($estilo,padd);
+    margin:map-get($estilo,margen);
+}
