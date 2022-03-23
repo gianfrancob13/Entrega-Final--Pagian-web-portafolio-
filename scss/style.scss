@@ -137,30 +137,42 @@ nav{
     margin-left: -50vw;
     left: 50%;
 
+
+
     div{
-        section {
-        .titlocon {
-            color: white;
-            margin-top: 30px;
-        }
-            
-        }
-        .marcafinal{  
-            color: grey;
-            margin-bottom: 10px;
-            margin-top: 30px;
-            display: flex;
-            justify-content: right;
-            background-color: #000000;
+            section {
+                .titlocon {
+                    color: white;
+                    margin-top: 30px;
+                }
+                
+            }
+        
             
         }
          
-    }
+    
 }
 
 .divpresentacion{ 
-margin-top: 170px;
+margin-top: 130px;
 margin-bottom: 60px;
+}
+
+.divproyectos {
+    margin-top: 130px;
+}
+
+.divhablidiades{
+    margin-top: 130px;
+}
+
+.sectionimput{
+    margin-top: 130px;
+}
+
+.diveducacion{
+    margin-top: 230px;
 }
 
 .textopresnetacion {
@@ -181,6 +193,23 @@ margin-bottom: 60px;
     height: 100vw;
 }
 
-footer { 
-background-color: #000000;
+
 }
+
+div{
+    section{ 
+        h2{
+            .edu1{
+                margin-top: 100px;
+            }
+            .edu2{
+                margin-top: 40px;
+            }
+            .edu3{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+

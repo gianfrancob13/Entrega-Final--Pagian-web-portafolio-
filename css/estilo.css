@@ -81,17 +81,22 @@ nav div a .img-fluid {
   .divfinal div section .titlocon {
     color: white;
     margin-top: 30px; }
-  .divfinal div .marcafinal {
-    color: grey;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: right;
-    background-color: #000000; }
 
 .divpresentacion {
-  margin-top: 170px;
+  margin-top: 130px;
   margin-bottom: 60px; }
+
+.divproyectos {
+  margin-top: 130px; }
+
+.divhablidiades {
+  margin-top: 130px; }
+
+.sectionimput {
+  margin-top: 130px; }
+
+.diveducacion {
+  margin-top: 130px; }
 
 .textopresnetacion {
   margin-top: 40px; }
@@ -106,5 +111,14 @@ nav div a .img-fluid {
   width: 70vw;
   height: 100vw; }
 
-footer {
-  background-color: #000000; }
+.contactoinput {
+  margin-top: 400px; }
+
+div section h2 .edu1 {
+  margin-top: 100px; }
+
+div section h2 .edu2 {
+  margin-top: 40px; }
+
+div section h2 .edu3 {
+  margin-top: 40px; }
