@@ -20,15 +20,27 @@ $screensize3: 1080px;
     div {
         div{
             section {  
-                    .imgperfil { width: 300px;
-                    height: 300px;
+                    .imgperfil { width: 160px;
+                    height: 160px;
                     display:block;
                     margin:auto;}
                 }
             } 
         } 
         
+
+    .divfinal{ 
+    background-color: #000000;
+    margin-top: 80px;
+    margin-bottom: -1vw;
+    height: 6vw;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
     }
+}
+    
 
 
     @media screen and (min-width:$screensize2) and (max-width:$screensize3){
@@ -59,6 +71,8 @@ $screensize3: 1080px;
                 
             }  
         }
+
+
    
 }
       
@@ -94,13 +108,79 @@ body {
 
 
 div{ 
-    .divdiv {margin: 20px;
+    .divdiv {padding: 0px;
+  margin: 0px;
 
     }
 }
 
 
 
+nav{   
+    div{
+        a{
+            .img-fluid{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+.divfinal{ 
+    background-color: #000000;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    height: 8vw;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+
+    div{
+        section {
+        .titlocon {
+            color: white;
+            margin-top: 30px;
+        }
+            
+        }
+        .marcafinal{  
+            color: grey;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: right;
+            background-color: #000000;
+            
+        }
+         
+    }
+}
+
+.divpresentacion{ 
+margin-top: 170px;
+margin-bottom: 60px;
+}
+
+.textopresnetacion {
+    margin-top: 40px;
+}
+
+.imgperfil {
+    margin-top: 40px;
+}
 
 
+.tituloproyec{ 
+    margin-bottom: 30px;
+}
 
+.carrusel img{ 
+    width: 70vw;
+    height: 100vw;
+}
+
+footer { 
+background-color: #000000;
+}
