@@ -7,6 +7,7 @@ $screensize3: 1080px;
 @import "map";
 @import "extend";
 
+
 @media screen and (min-width:$screensize1) and (max-width:$screensize2) {
        
     div { 
@@ -186,14 +187,6 @@ margin-bottom: 60px;
 
 .tituloproyec{ 
     margin-bottom: 30px;
-}
-
-.carrusel img{ 
-    width: 70vw;
-    height: 100vw;
-}
-
-
 }
 
 div{
