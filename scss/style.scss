@@ -4,8 +4,10 @@ $screensize1: 600px;
 $screensize2: 990px;
 $screensize3: 1080px;
 
-@import "map";
-@import "extend";
+@import "proyectos";
+@import "estudios";
+@import "habilidades";
+@import "contacto";
 
 
 @media screen and (min-width:$screensize1) and (max-width:$screensize2) {
@@ -203,6 +205,24 @@ div{
             }
         }
     }
+}
+
+
+
+
+//ex map
+
+$estilo:( 
+    over: hidden,
+    padd: 10px,
+    margen: 10px,
+);
+
+
+body{ 
+    overflow-x:map-get($estilo,over);
+    padding:map-get($estilo,padd);
+    margin:map-get($estilo,margen);
 }
 
 
