@@ -1,187 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{ background-color: #191919;
-height: 100%;}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
-  min-height: 100%;
-  min-width:100%;
-}
-
-
-/*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*/
-
-/*medias queries*//*medias queries*//*medias queries*/
-
-
-/*@media (max-width: 600px) {
- .menu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-}
-
-
-@media (min-width: 600px) and (max-width: 1400px){
-
- .menu{
-  position: ;
-  width: 100%;
-  height: 100vh;
-  top: 100px;
-  background: #black;
-  text-align:center;
-  transition: all .5s;
-
- }
-}
-
-
-
-
-/*medias queries*//*medias queries*//*medias queries*/
-
-
-
-/*menu*//*menu*//*menu*//*menu*//*menu*//*menu*//*menu*/
-
-/*.wrapper {
- width: 100vw;
- height: 100vh;
- background-color: #191919;
-  color: #fff;
-}
-
-.brand span {
-  color: #EFBC75;}
-
-.brand {
-  margin-top: -7px;
-}
-
-.navbar {
- display: flex;
- justify-content: space-between;
-padding: 2em;}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;}
-
-.menu{
-  display: flex;
-  width: 40%;
-  justify-content: space-around;
-}
-
-.menu li {
-  list-style: none;}
-
-.menu .active{
-  color: #EFBC75;
-}
-
-.menu a:hover{
-  background-color: #EFBC75;
-  color: #191919;}
-
-/*menu*//*menu*//*menu*//*menu*//*menu*//*menu*//*menu*/
-
-
-
-/*main*//*main*//*main*//*main*//*main*//*main*//*main*/
-
-/*.main {
-  margin: 0 auto;
-  width: 80vw;
-  height: 80vh;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-}
-
-h1{ 
-  font-size: 3em;}
-
-span{
-  color: #EFBC75;
-}
-
-.Diseñador-Digital{
-  color: #EFBC75
-}
-
-.Diseñador-UX-UI{
-  color: #EFBC75
-}
-
-.download-cv{
-  padding: 10px 20px;
-  background-color: #EFBC75;
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  box-shadow: 1px 3px 11px -5px  rgba(230, 208, 117, .69);
-}
-
-.download-cv:hover {
- background-color: #fff;
- box-shadow: none;}
-
-.main img {
-  border-color: ;
-  border: 7px solid rgb(239, 188, 117);
-  height: 520px;}
-
-/*main*//*main*//*main*//*main*//*main*//*main*//*main*/
-
-
-
-/*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
-
-/*.footer{
-  background-color: #111111;
-  height: 50px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border-top: 3px solid rgb(239, 188, 117);
-}
-
-.footer p{
-  font-size: 15px;
-  color: #fff;
-}*/
-
-/*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
-
-
-/*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*//*pagina inicio*/
-
-
-
-
-
-
-
-
-
-
-
-/*index2*/
-
 /* VAriables para el tema del sitio */
 
 :root{
@@ -260,10 +76,9 @@ nav ul li a:hover{
     display: none;
 }
 
+
+
 /* Estilos de la seccion principal */
-
-
-
 
 footer{
     background-color: var(--primary);
@@ -277,7 +92,7 @@ footer{
     position: fixed;
 }
 
-@media(max-width:1020px){
+@media (max-width:1020px) {
 
     nav{
         justify-content: flex-start;
@@ -306,6 +121,8 @@ footer{
 
     }
 
+
+
     nav ul li{
         padding: 1rem 0;
         display: flex;
@@ -318,19 +135,38 @@ footer{
         left: 0;
     }
 
-    .main{
-      
+     .main{
+        margin: 0 auto;
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .main img{
+    display: grid;
+    height: 350px; 
+    order: 1;
+    }
+
+    .info-content{
+    grid-columne: 1/2;
+    order: 2;
+    margin-top: 20px;
     }
 }
 
 /*main*//*main*//*main*//*main*//*main*//*main*//*main*/
 
+
 .main {
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
+  /*flex-direction: row;*/
   align-items: center;
 }
 
@@ -375,7 +211,7 @@ span{
  box-shadow: none;
  color: #fff;}
 
-.main img {
+.imgperfil {
   border-color: #EFBC75;
   border: 7px solid rgb(239, 188, 117);
   height: 520px;
