@@ -252,11 +252,11 @@ footer{
         top: 10vh;
         left: -100%;
         text-align: center;
-        transition: width  1.5s;
+        transition: width ;
         display: flex;
         flex-direction: column;
         align-content: stretch;
-        position: absolute;
+        position: fixed;
 
     }
 
@@ -291,13 +291,15 @@ footer{
     order: 2;
     margin-top: 20px;
     }
-}
 
-.main img{
+    .main img{
     display: grid;
     height: 350px; 
     order: 1;
     }
+}
+
+
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->

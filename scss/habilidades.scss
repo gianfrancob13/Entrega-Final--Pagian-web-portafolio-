@@ -1,1 +1,81 @@
+/*SCSS Habilidades*/
 
+/*<!--========================================================== -->
+                        <!--Variables start-->
+<!--========================================================== -->*/
+
+    $primary:#0E2C40;
+    $secundary:#2e4469;
+    $background:#35495e;
+    $black-text:rgb(61, 61, 61);
+    $white-text:#ffffff;
+    $button-hover:#38755a;
+    $color3:#EFBC75;
+    $color4:#121524;
+    $crimson : crimson;
+	$black:#0d0d0d;
+	$light-bg:#1a1a1a;
+	$white:#000000;
+	$light-color:#aaa;
+	$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+
+/*<!--========================================================== -->
+                        <!--Variables end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Habilidades start-->
+<!--========================================================== -->*/
+
+.skills{
+
+  .title-habilidades{
+  margin-top: 40px;
+  }
+
+  .box-container{
+
+  	margin-bottom: 70px;
+	margin-top: 50px;
+	text-align: center;
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+    @include grid(16rem);
+
+    .box{
+      padding:2rem;
+      text-align: center;
+      box-shadow: $box-shadow;
+      border-radius: .5rem;
+      background: $color4;
+
+      &:hover{
+        background: $light-bg;
+
+        h3{
+          color:$white-text;
+        }
+      }
+
+      img{
+        height: 5rem;
+        margin-bottom: 1rem;
+      }
+
+      h3{
+        color:$white-text;
+        font-size: 1.7rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+/*<!--========================================================== -->
+                        <!--Habilidades end-->
+<!--========================================================== -->*/

@@ -1,0 +1,214 @@
+/*SCSS Contacto*/
+
+/*<!--========================================================== -->
+                        <!--Variables start-->
+<!--========================================================== -->*/
+
+    $primary:#0E2C40;
+    $secundary:#2e4469;
+    $background:#35495e;
+    $black-text:rgb(61, 61, 61);
+    $white-text:#ffffff;
+    $button-hover:#38755a;
+    $color3:#EFBC75;
+    $color4:#121524;
+    $crimson : crimson;
+	$black:#0d0d0d;
+	$light-bg:#1a1a1a;
+	$white:#000000;
+	$light-color:#aaa;
+	$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+
+/*<!--========================================================== -->
+                        <!--Variables end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Contacto start-->
+<!--========================================================== -->*/
+
+.contact{
+	
+  	margin-bottom: 70px;
+	margin-top: 50px;
+	text-align: center;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+
+	.heading{
+	font-size: 40px;
+	}
+
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+
+    .info-container{
+      width:40rem;
+
+      h1{
+        font-size: 24px;
+        color:$white;
+        padding-bottom: 1rem;
+      }
+
+      p{
+        font-size: 19.2px;
+        line-height: 2;
+        color:$light-color;
+        padding:1rem 0;
+      }
+
+      .box-container{
+        padding:2rem 0;
+
+        .box{
+          display: flex;
+          gap:2rem;
+          padding:1rem 0;
+
+          i{
+            font-size: 22.2px;
+            color:$color3;
+          }
+
+          h3{
+            font-size: 19.2px;
+            color:$white;
+          }
+        }
+      }
+
+      .share{
+
+
+        margin-left: 10px;
+
+        a{
+          font-size: 2rem;
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          border-radius: 50%;
+          background: $color4;
+          color:$white-text;
+         	margin: 10px;
+
+          &:hover{
+            background: $color4;
+          }
+        }
+      }
+    }
+
+    form{
+      flex:1 1 42rem;
+
+      .inputBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input{
+          width:49%;
+        }
+      }
+
+      .inputBox input,
+      	textarea{
+        border-radius: 5rem;
+        padding:1.2rem 1.8rem;
+        font-size: 1.6rem;
+        color:$white;
+        text-transform: none;
+        margin:.7rem 0;
+        background: $light-bg;
+      }
+
+      textarea{
+        width:100%;
+        border-radius: 1rem;;
+        resize: none;
+        height: 25rem;
+      }
+
+      .btn{
+        padding:1rem 3rem;
+        cursor: pointer;
+
+        &:hover{
+          background: $white;
+          color:$black;
+        }
+      }
+    }
+  }
+}
+
+/*<!--========================================================== -->
+                        <!--Contacto end-->
+<!--========================================================== -->*/
+
+@media (max-width:768px){
+
+  .heading{
+    font-size: 12vw;
+  }
+
+  .navbar{
+
+    a{
+
+      i{
+        padding:0;
+      }
+
+      span{
+        display: none;
+      }
+
+      &:hover{
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .home{
+    text-align: center;
+    gap:2rem;
+
+    .image img{
+      height: 30rem;
+      width: 30rem;
+    }
+
+    .content{
+
+      h3{
+        font-size: 3rem;
+      }
+
+      span{
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .contact .row form .inputBox input{
+    width:100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+}
