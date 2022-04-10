@@ -1,13 +1,44 @@
-/* VAriables para el tema del sitio */
+/*SCSS Index*/
 
-:root{
-    --primary:#0E2C40;
-    --secundary:#2e4469;
-    --background:#35495e;
-    --black-text:rgb(61, 61, 61);
-    --white-text:#ffffff;
-    --button-hover:#38755a;
-}
+
+
+/*<!--========================================================== -->
+                        <!--Imports start-->
+<!--========================================================== -->*/
+
+@import "proyectos";
+@import "habilidades";
+@import "quiensoy";
+@import "contacto";
+
+/*<!--========================================================== -->
+                        <!--Imports end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Variables start-->
+<!--========================================================== -->*/
+
+    $primary:#0E2C40;
+    $secundary:#2e4469;
+    $background:#35495e;
+    $black-text:rgb(61, 61, 61);
+    $white-text:#ffffff;
+    $button-hover:#38755a;
+    $color3:#EFBC75;
+    $color4:#121524;
+
+/*<!--========================================================== -->
+                        <!--Variables end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Ajustes end-->
+<!--========================================================== -->*/
 
 *{
     margin: 0;
@@ -22,19 +53,34 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/*<!--========================================================== -->
+                        <!--Ajustes end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Menu start-->
+<!--========================================================== -->*/
+
 nav{
-    background-color: var(--primary);
+    background-color: $primary;
     height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 3px solid #EFBC75;
 }
 
 header h1{
-    color: var(--white-text);
+    color: $white-text;
     font-size: 2rem;
     letter-spacing: .2rem;
+}
+
+span{
+  color: $color3;
 }
 
 nav ul{
@@ -50,18 +96,18 @@ nav ul li:last-child{
 }
 
 nav ul li a {
-    color: var(--white-text);
+    color: $white-text;
     font-size: 15px;
     padding: .8rem 1rem;
 }
 
 nav ul li a:hover{
-    background-color: #121524;
+    background-color: $color4;
     transition: all .3s;
 }
 
 .drawer{
-    color: var(--white-text);
+    color: $white-text;
     float: left;
     cursor: pointer;
     display: none;
@@ -76,12 +122,92 @@ nav ul li a:hover{
     display: none;
 }
 
+/*<!--========================================================== -->
+                        <!--Menu end-->
+<!--========================================================== -->*/
 
 
-/* Estilos de la seccion principal */
+
+/*<!--========================================================== -->
+                        <!--Main start-->
+<!--========================================================== -->*/
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+}
+
+h1{ 
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 8px;}
+
+.texto-main{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+span{
+  color: $color3;
+}
+
+.Diseñador-Digital{
+  color: $color3;
+}
+
+.Diseñador-UX-UI{
+  font-weight: bold;
+  color: #000000;
+}
+
+.download-cv{
+  padding: 10px 20px;
+  background-color: $color3;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px  rgba(230, 208, 117, .69);
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-weight: bold;}
+
+
+
+.download-cv:hover {
+ background-color: $color4;
+ box-shadow: none;
+ color: #fff;}
+
+.imgperfil {
+  border-color: $color3;
+  border: 7px solid rgb(239, 188, 117);
+  height: 520px;
+  margin-left: 12px;}
+
+.Diseñador-Digital{
+  font-weight: bold;
+  color: #000000;
+  }
+
+/*<!--========================================================== -->
+                        <!--Main end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Footer start-->
+<!--========================================================== -->*/
 
 footer{
-    background-color: var(--primary);
+    background-color: $primary;
     color: #C3C3C3;
     display: flex;
     justify-content: center;
@@ -90,7 +216,19 @@ footer{
     width: 100%;
     bottom: 0;
     position: fixed;
+    border-top: 3px solid #EFBC75;
+
 }
+
+/*<!--========================================================== -->
+                        <!--Footer end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Mediaqueries start-->
+<!--========================================================== -->*/
 
 @media (max-width:1020px) {
 
@@ -108,16 +246,17 @@ footer{
 
     ul{
         position: fixed;
-        width: 50%;
-        height: 100vh;
-        background-color: var(--background);
+        width: 100%;
+        height: 40.8vh;
+        background-color: $background;
         top: 10vh;
         left: -100%;
-        text-align: left;
-        transition: all .5s;
+        text-align: center;
+        transition: width  1.5s;
         display: flex;
         flex-direction: column;
         align-content: stretch;
+        position: absolute;
 
     }
 
@@ -145,11 +284,7 @@ footer{
         justify-content: center;
       }
 
-    .main img{
-    display: grid;
-    height: 350px; 
-    order: 1;
-    }
+    
 
     .info-content{
     grid-columne: 1/2;
@@ -158,66 +293,12 @@ footer{
     }
 }
 
-/*main*//*main*//*main*//*main*//*main*//*main*//*main*/
+.main img{
+    display: grid;
+    height: 350px; 
+    order: 1;
+    }
 
-
-.main {
-  margin: 0 auto;
-  width: 80vw;
-  height: 80vh;
-  display: flex;
-  /*flex-direction: row;*/
-  align-items: center;
-}
-
-h1{ 
-  font-size: 2.5em;
-  text-align: center;
-  margin-bottom: 8px;}
-
-.texto-main{
-  text-align: center;
-}
-
-span{
-  color: #EFBC75;
-}
-
-.Diseñador-Digital{
-  color: #EFBC75
-}
-
-.Diseñador-UX-UI{
-  color: #EFBC75
-}
-
-.download-cv{
-  padding: 10px 20px;
-  background-color: #EFBC75;
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  box-shadow: 1px 3px 11px -5px  rgba(230, 208, 117, .69);
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;}
-
-
-
-.download-cv:hover {
- background-color: #121524;
- box-shadow: none;
- color: #fff;}
-
-.imgperfil {
-  border-color: #EFBC75;
-  border: 7px solid rgb(239, 188, 117);
-  height: 520px;
-  margin-left: 12px;}
-
-
-
-/*main*//*main*//*main*//*main*//*main*//*main*//*main*/
-
+/*<!--========================================================== -->
+                        <!--Mediaqueries end-->
+<!--========================================================== -->*/
