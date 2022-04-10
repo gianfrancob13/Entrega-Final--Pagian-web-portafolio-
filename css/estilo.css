@@ -27,7 +27,8 @@
   margin-left: auto;
   margin-right: auto; }
   .portfolio .heading {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 43px; }
   .portfolio .img-proyectos {
     height: 350px;
     border: 3px solid #121524;
@@ -40,7 +41,8 @@
     .portfolio .box-container .box {
       height: 30rem;
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      border-radius: 5px; }
       .portfolio .box-container .box:hover .content {
         transform: translateY(0%); }
       .portfolio .box-container .box img {
@@ -60,22 +62,24 @@
         justify-content: center;
         padding: 2rem;
         transform: translateY(-100%);
-        transition: .2s linear; }
+        transition: .2s linear;
+        border: 3px solid #121524;
+        border-radius: 5px; }
         .portfolio .box-container .box .content h3 {
-          font-size: 24px;
+          font-size: 30px;
           color: #ffffff;
           text-transform: uppercase;
           font-weight: normal; }
         .portfolio .box-container .box .content p {
           padding: 1rem 0;
-          font-size: 19.2px;
+          font-size: 20px;
           line-height: 2;
           color: #aaa; }
         .portfolio .box-container .box .content a {
-          font-size: 14.4px;
-          color: crimson; }
+          font-size: 12px;
+          color: #EFBC75; }
           .portfolio .box-container .box .content a:hover {
-            color: #000000; }
+            background-color: #121524; }
 
 .boton-vermas {
   padding: 10px 20px;
@@ -89,12 +93,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 12px; }
 
 .boton-vermas:hover {
   background-color: #121524;
   box-shadow: none;
-  color: #fff; }
+  color: #fff;
+  font-size: 12px; }
 
 /*<!--========================================================== -->
                         <!--Proyectos end-->
@@ -103,19 +109,6 @@
                         <!--Mediaqueries start-->
 <!--========================================================== -->*/
 @media (max-width: 1020px) {
-  .body-proyectos ul {
-    width: 100%;
-    height: 40.8vh;
-    background-color: #35495e;
-    top: 10vh;
-    left: -100%;
-    text-align: center;
-    transition: width;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    position: absolute;
-    z-index: 1; }
   .body-proyectos .portfolio {
     margin-bottom: 70px;
     margin-top: 50px;
@@ -123,7 +116,15 @@
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    z-index: 2; } }
+    z-index: 2; }
+    .body-proyectos .portfolio .heading {
+      font-size: 33px; }
+    .body-proyectos .portfolio .box-container .box h3 {
+      font-size: 23px; }
+    .body-proyectos .portfolio .box-container .box p {
+      font-size: 15px; }
+    .body-proyectos .portfolio .box-container .box a {
+      font-size: 12px; } }
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->
@@ -139,7 +140,8 @@
                         <!--Habilidades start-->
 <!--========================================================== -->*/
 .skills .title-habilidades {
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-size: 43px; }
 
 .skills .box-container {
   margin-bottom: 70px;
@@ -160,17 +162,32 @@
     .skills .box-container .box:hover {
       background: #1a1a1a; }
       .skills .box-container .box:hover h3 {
-        color: #ffffff; }
+        color: #ffffff;
+        font-size: 30px; }
     .skills .box-container .box img {
       height: 5rem;
       margin-bottom: 1rem; }
     .skills .box-container .box h3 {
       color: #ffffff;
-      font-size: 1.7rem;
+      font-size: 30px;
       font-weight: normal; }
 
 /*<!--========================================================== -->
                         <!--Habilidades end-->
+<!--========================================================== -->*/
+/*<!--========================================================== -->
+                        <!--Mediaqueries start-->
+<!--========================================================== -->*/
+@media (max-width: 1020px) {
+  .skills .title-habilidades {
+    font-size: 33px; }
+  .skills .box-container .box h3 {
+    font-size: 20px; }
+  .skills .box-container .box:hover h3 {
+    font-size: 20px; } }
+
+/*<!--========================================================== -->
+                        <!--Mediaqueries end-->
 <!--========================================================== -->*/
 /*SCSS Quien soy*/
 /*<!--========================================================== -->
@@ -193,16 +210,17 @@
   width: 60vw;
   display: flex; }
   .main-quiensoy .title-quiensoy {
-    font-size: 2.5em;
+    font-size: 43px;
     text-align: center;
     margin-bottom: 8px;
     margin-top: 50px; }
   .main-quiensoy .txt-quiensoy {
     text-align: center;
     margin: 5px;
-    font-size: 1.2rem; }
+    font-size: 26px; }
   .main-quiensoy .download-cv {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 12px; }
 
 /*<!--========================================================== -->
                         <!--Quien soy end-->
@@ -216,7 +234,7 @@
   height: 50vh;
   margin-bottom: 100px; }
   .education .title-educacion {
-    font-size: 2.5em;
+    font-size: 43px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px; }
@@ -254,13 +272,13 @@
         left: 9rem;
         margin-top: 12px; }
       .education .box-container .box h3 {
-        font-size: 1.5rem;
+        font-size: 30px;
         padding: 1rem 0;
         color: #000000;
         padding-top: 3rem;
         font-weight: normal; }
       .education .box-container .box p {
-        font-size: 19.2px;
+        font-size: 26px;
         color: #aaa;
         line-height: 2; }
       .education .box-container .box .educacion-secundario {
@@ -273,10 +291,26 @@
                         <!--Mediaqueries start-->
 <!--========================================================== -->*/
 @media (max-width: 1020px) {
-  .drawer {
-    display: block; }
-  #ckbox:checked ~ .menu-box {
-    left: 0; } }
+  .info-content-quiensoy .download-cv {
+    font-weight: bold;
+    font-size: 12px; }
+  .info-content-quiensoy .title-quiensoy {
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 50px; }
+  .info-content-quiensoy .txt-quiensoy {
+    text-align: center;
+    margin: 5px;
+    font-size: 20px; }
+  .education .title-educacion {
+    font-size: 33px; }
+  .education .box-container .box i {
+    font-size: 15px; }
+  .education .box-container .box h3 {
+    font-size: 23px; }
+  .education .box-container .box p {
+    font-size: 20px; } }
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->
@@ -299,35 +333,22 @@
   margin-left: auto;
   margin-right: auto; }
   .contact .heading {
-    font-size: 40px; }
+    font-size: 43px; }
   .contact .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem; }
     .contact .row .info-container {
-      width: 40rem; }
+      width: 80vw; }
       .contact .row .info-container h1 {
-        font-size: 24px;
-        color: #000000;
-        padding-bottom: 1rem; }
+        font-size: 23px;
+        padding-bottom: 1rem;
+        color: #EFBC75; }
       .contact .row .info-container p {
-        font-size: 19.2px;
+        font-size: 20px;
         line-height: 2;
-        color: #aaa;
-        padding: 1rem 0; }
-      .contact .row .info-container .box-container {
-        padding: 2rem 0; }
-        .contact .row .info-container .box-container .box {
-          display: flex;
-          gap: 2rem;
-          padding: 1rem 0; }
-          .contact .row .info-container .box-container .box i {
-            font-size: 22.2px;
-            color: #EFBC75; }
-          .contact .row .info-container .box-container .box h3 {
-            font-size: 19.2px;
-            color: #000000; }
+        color: #aaa; }
       .contact .row .info-container .share {
         margin-left: 10px; }
         .contact .row .info-container .share a {
@@ -339,8 +360,6 @@
           background: #121524;
           color: #ffffff;
           margin: 10px; }
-          .contact .row .info-container .share a:hover {
-            background: #121524; }
     .contact .row form {
       flex: 1 1 42rem; }
       .contact .row form .inputBox {
@@ -353,7 +372,7 @@
       .contact .row form textarea {
         border-radius: 5rem;
         padding: 1.2rem 1.8rem;
-        font-size: 1.6rem;
+        font-size: 20px;
         color: #000000;
         text-transform: none;
         margin: .7rem 0;
@@ -373,33 +392,16 @@
 /*<!--========================================================== -->
                         <!--Contacto end-->
 <!--========================================================== -->*/
-@media (max-width: 768px) {
-  .heading {
-    font-size: 12vw; }
-  .navbar a i {
-    padding: 0; }
-  .navbar a span {
-    display: none; }
-  .navbar a:hover {
-    padding-bottom: 2rem; }
-  .home {
-    text-align: center;
-    gap: 2rem; }
-    .home .image img {
-      height: 30rem;
-      width: 30rem; }
-    .home .content h3 {
-      font-size: 3rem; }
-    .home .content span {
-      font-size: 2.5rem; }
-  .contact .row form .inputBox input {
-    width: 100%;
-    margin-bottom: 1rem; } }
+/*<!--========================================================== -->
+                        <!--Mediaqueries start-->
+<!--========================================================== -->*/
+@media (max-width: 1020px) {
+  .contact .heading {
+    font-size: 33px; } }
 
-@media (max-width: 450px) {
-  html {
-    font-size: 50%; } }
-
+/*<!--========================================================== -->
+                        <!--Mediaqueries end-->
+<!--========================================================== -->*/
 /*<!--========================================================== -->
                         <!--Imports end-->
 <!--========================================================== -->*/
@@ -485,20 +487,20 @@ nav ul li a:hover {
 <!--========================================================== -->*/
 .main {
   margin: 0 auto;
-  width: 80vw;
+  width: 60vw;
   height: 80vh;
   display: flex;
   /*flex-direction: row;*/
   align-items: center; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 43px;
   text-align: center;
   margin-bottom: 8px; }
 
 .texto-main {
   text-align: center;
-  font-size: 1.2rem; }
+  font-size: 26px; }
 
 span {
   color: #EFBC75; }
@@ -522,7 +524,8 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 12px; }
 
 .download-cv:hover {
   background-color: #121524;
@@ -556,6 +559,8 @@ footer {
   bottom: 0;
   position: fixed;
   border-top: 3px solid #EFBC75; }
+  footer p {
+    font-size: 12px; }
 
 /*<!--========================================================== -->
                         <!--Footer end-->
@@ -568,10 +573,15 @@ footer {
     justify-content: flex-start; }
   .drawer {
     display: block; }
-  nav h1 {
-    margin-left: 1rem; }
+  h1 {
+    margin-left: 1rem;
+    font-size: 33px; }
+  .texto-main {
+    text-align: center;
+    font-size: 23px; }
+  .download-cv {
+    font-size: 12px; }
   ul {
-    position: fixed;
     width: 100%;
     height: 40.8vh;
     background-color: #35495e;
@@ -582,7 +592,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: stretch;
-    position: fixed; }
+    position: absolute;
+    z-index: 1; }
   nav ul li {
     padding: 1rem 0;
     display: flex;

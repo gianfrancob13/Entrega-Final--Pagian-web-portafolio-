@@ -21,14 +21,14 @@
                         <!--Variables start-->
 <!--========================================================== -->*/
 
-    $primary:#0E2C40;
-    $secundary:#2e4469;
-    $background:#35495e;
-    $black-text:rgb(61, 61, 61);
-    $white-text:#ffffff;
-    $button-hover:#38755a;
-    $color3:#EFBC75;
-    $color4:#121524;
+$primary:#0E2C40;
+$secundary:#2e4469;
+$background:#35495e;
+$black-text:rgb(61, 61, 61);
+$white-text:#ffffff;
+$button-hover:#38755a;
+$color3:#EFBC75;
+$color4:#121524;
 
 /*<!--========================================================== -->
                         <!--Variables end-->
@@ -47,7 +47,6 @@
     list-style: none;
     box-sizing: border-box;
 }
-
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -134,7 +133,7 @@ nav ul li a:hover{
 
 .main {
   margin: 0 auto;
-  width: 80vw;
+  width: 60vw;
   height: 80vh;
   display: flex;
   /*flex-direction: row;*/
@@ -142,13 +141,13 @@ nav ul li a:hover{
 }
 
 h1{ 
-  font-size: 2.5em;
+  font-size: 43px;
   text-align: center;
   margin-bottom: 8px;}
 
 .texto-main{
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 26px;
 }
 
 span{
@@ -176,20 +175,24 @@ span{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-weight: bold;}
+  font-weight: bold;
+  font-size: 12px;
+  }
 
 
 
 .download-cv:hover {
  background-color: $color4;
  box-shadow: none;
- color: #fff;}
+ color: #fff;
+ }
 
 .imgperfil {
   border-color: $color3;
   border: 7px solid rgb(239, 188, 117);
   height: 520px;
-  margin-left: 12px;}
+  margin-left: 12px;
+  }
 
 .Diseñador-Digital{
   font-weight: bold;
@@ -218,6 +221,9 @@ footer{
     position: fixed;
     border-top: 3px solid #EFBC75;
 
+    p{
+    font-size: 12px;
+    }
 }
 
 /*<!--========================================================== -->
@@ -240,12 +246,24 @@ footer{
         display: block;
     }
 
-    nav h1{
+    h1{
         margin-left: 1rem;
+        font-size: 33px;
     }
 
+   
+    .texto-main{
+      text-align: center;
+      font-size: 23px;
+    }
+
+    .download-cv{font-size: 12px;
+    }
+
+     
+    
     ul{
-        position: fixed;
+        
         width: 100%;
         height: 40.8vh;
         background-color: $background;
@@ -256,11 +274,9 @@ footer{
         display: flex;
         flex-direction: column;
         align-content: stretch;
-        position: fixed;
-
+        position: absolute;
+        z-index: 1;
     }
-
-
 
     nav ul li{
         padding: 1rem 0;
@@ -284,8 +300,6 @@ footer{
         justify-content: center;
       }
 
-    
-
     .info-content{
     grid-columne: 1/2;
     order: 2;
@@ -298,8 +312,6 @@ footer{
     order: 1;
     }
 }
-
-
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->

@@ -4,20 +4,20 @@
                         <!--Variables start-->
 <!--========================================================== -->*/
 
-    $primary:#0E2C40;
-    $secundary:#2e4469;
-    $background:#35495e;
-    $black-text:rgb(61, 61, 61);
-    $white-text:#ffffff;
-    $button-hover:#38755a;
-    $color3:#EFBC75;
-    $color4:#121524;
-    $crimson : crimson;
-	$black:#0d0d0d;
-	$light-bg:#1a1a1a;
-	$white:#000000;
-	$light-color:#aaa;
-	$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+$primary:#0E2C40;
+$secundary:#2e4469;
+$background:#35495e;
+$black-text:rgb(61, 61, 61);
+$white-text:#ffffff;
+$button-hover:#38755a;
+$color3:#EFBC75;
+$color4:#121524;
+$crimson : crimson;
+$black:#0d0d0d;
+$light-bg:#1a1a1a;
+$white:#000000;
+$light-color:#aaa;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
 /*<!--========================================================== -->
                         <!--Variables end-->
@@ -33,6 +33,7 @@
 
   .title-habilidades{
   margin-top: 40px;
+  font-size: 43px;
   }
 
   .box-container{
@@ -59,6 +60,7 @@
 
         h3{
           color:$white-text;
+          font-size: 30px;
         }
       }
 
@@ -69,7 +71,7 @@
 
       h3{
         color:$white-text;
-        font-size: 1.7rem;
+        font-size: 30px;
         font-weight: normal;
       }
     }
@@ -78,4 +80,40 @@
 
 /*<!--========================================================== -->
                         <!--Habilidades end-->
+<!--========================================================== -->*/
+
+
+
+/*<!--========================================================== -->
+                        <!--Mediaqueries start-->
+<!--========================================================== -->*/
+
+@media (max-width:1020px) {
+	
+	.skills{
+
+	.title-habilidades{
+	font-size: 33px;
+	}
+
+	.box-container{
+
+	.box{
+
+	h3{
+	font-size: 20px;
+	}
+
+	&:hover{
+        h3{
+          font-size: 20px;
+        }
+      }
+	}
+	}
+	}
+	}
+
+/*<!--========================================================== -->
+                        <!--Mediaqueries end-->
 <!--========================================================== -->*/

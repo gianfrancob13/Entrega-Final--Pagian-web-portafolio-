@@ -4,20 +4,20 @@
                         <!--Variables start-->
 <!--========================================================== -->*/
 
-    $primary:#0E2C40;
-    $secundary:#2e4469;
-    $background:#35495e;
-    $black-text:rgb(61, 61, 61);
-    $white-text:#ffffff;
-    $button-hover:#38755a;
-    $color3:#EFBC75;
-    $color4:#121524;
-    $crimson : crimson;
-	$black:#0d0d0d;
-	$light-bg:#1a1a1a;
-	$white:#000000;
-	$light-color:#aaa;
-	$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+$primary:#0E2C40;
+$secundary:#2e4469;
+$background:#35495e;
+$black-text:rgb(61, 61, 61);
+$white-text:#ffffff;
+$button-hover:#38755a;
+$color3:#EFBC75;
+$color4:#121524;
+$crimson : crimson;
+$black:#0d0d0d;
+$light-bg:#1a1a1a;
+$white:#000000;
+$light-color:#aaa;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
 /*<!--========================================================== -->
                         <!--Variables end-->
@@ -46,9 +46,7 @@
                         <!--Proyectos start-->
 <!--========================================================== -->*/
 	
-	
     .portfolio{
-
 	margin-bottom: 70px;
 	margin-top: 50px;
 	text-align: center;
@@ -60,7 +58,7 @@
 
 	.heading{
 	margin-bottom: 40px;
-	
+	font-size: 43px;
 	}
 
 	.img-proyectos{
@@ -78,10 +76,11 @@
       height: 30rem;
       overflow:hidden;
       position: relative;
+      border-radius: 5px;
 
       &:hover{
         .content{
-          transform: translateY(0%);
+        transform: translateY(0%);
         }
       }
 
@@ -104,9 +103,11 @@
         padding:2rem;
         transform: translateY(-100%);
         transition: .2s linear;
+        border: 3px solid $color4;
+		border-radius: 5px;
 
         h3{
-          font-size: 24px;
+          font-size: 30px;
           color:$white-text;
           text-transform: uppercase;
           font-weight: normal;
@@ -114,27 +115,23 @@
 
         p{
           padding:1rem 0;
-          font-size: 19.2px;
+          font-size: 20px;
           line-height: 2;
           color:$light-color;
         }
 
         a{
-          font-size: 14.4px;
-          color:$crimson;
+          font-size: 12px;
+          color:$color3;
 
           &:hover{
-            color:$white;
+            background-color: $color4;
           }
         }
       }
     }
   }
 }
-
-
-
-
 
 .boton-vermas{
   padding: 10px 20px;
@@ -148,15 +145,16 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  font-weight: bold;}
-
-
+  font-weight: bold;
+  font-size: 12px;
+  }
 
 .boton-vermas:hover {
  background-color: $color4;
  box-shadow: none;
- color: #fff;}
-
+ color: #fff;
+ font-size: 12px;
+ }
 
 /*<!--========================================================== -->
                         <!--Proyectos end-->
@@ -172,36 +170,39 @@
 
     .body-proyectos{
 	
-	ul{
-        
-        width: 100%;
-        height: 40.8vh;
-        background-color: $background;
-        top: 10vh;
-        left: -100%;
-        text-align: center;
-        transition: width ;
-        display: flex;
-        flex-direction: column;
-        align-content: stretch;
-        position: absolute;
-        z-index: 1;
-
-    }
-
     .portfolio{
-
 	margin-bottom: 70px;
 	margin-top: 50px;
 	text-align: center;
 	width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
-	z-index: 2;}
-}
-}
+	z-index: 2;
 
+	.heading{
+		font-size: 33px;
+	}
 
+	.box-container{
+
+    .box{
+
+        h3{
+          font-size: 23px;
+        }
+
+        p{
+          font-size: 15px;
+        }
+
+        a{
+          font-size: 12px;
+          }
+        }
+      }
+	}
+   }
+  }
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->

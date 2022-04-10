@@ -39,7 +39,7 @@
 	margin-right: auto;
 
 	.heading{
-	font-size: 40px;
+	font-size: 43px;
 	}
 
   .row{
@@ -49,40 +49,26 @@
     gap:2rem;
 
     .info-container{
-      width:40rem;
+     width:80vw;
+
 
       h1{
-        font-size: 24px;
-        color:$white;
+        font-size: 23px;
         padding-bottom: 1rem;
+        color:$color3;
       }
+
+
 
       p{
-        font-size: 19.2px;
+        font-size: 20px;
         line-height: 2;
         color:$light-color;
-        padding:1rem 0;
+        
+
       }
 
-      .box-container{
-        padding:2rem 0;
-
-        .box{
-          display: flex;
-          gap:2rem;
-          padding:1rem 0;
-
-          i{
-            font-size: 22.2px;
-            color:$color3;
-          }
-
-          h3{
-            font-size: 19.2px;
-            color:$white;
-          }
-        }
-      }
+      
 
       .share{
 
@@ -100,7 +86,7 @@
          	margin: 10px;
 
           &:hover{
-            background: $color4;
+            
           }
         }
       }
@@ -123,7 +109,7 @@
       	textarea{
         border-radius: 5rem;
         padding:1.2rem 1.8rem;
-        font-size: 1.6rem;
+        font-size: 20px;
         color:$white;
         text-transform: none;
         margin:.7rem 0;
@@ -154,61 +140,23 @@
                         <!--Contacto end-->
 <!--========================================================== -->*/
 
-@media (max-width:768px){
 
-  .heading{
-    font-size: 12vw;
-  }
 
-  .navbar{
+/*<!--========================================================== -->
+                        <!--Mediaqueries start-->
+<!--========================================================== -->*/
 
-    a{
+@media (max-width:1020px) {
 
-      i{
-        padding:0;
-      }
-
-      span{
-        display: none;
-      }
-
-      &:hover{
-        padding-bottom: 2rem;
-      }
-    }
-  }
-
-  .home{
-    text-align: center;
-    gap:2rem;
-
-    .image img{
-      height: 30rem;
-      width: 30rem;
-    }
-
-    .content{
-
-      h3{
-        font-size: 3rem;
-      }
-
-      span{
-        font-size: 2.5rem;
-      }
-    }
-  }
-
-  .contact .row form .inputBox input{
-    width:100%;
-    margin-bottom: 1rem;
-  }
+	.contact{
+		.heading{
+			font-size: 33px;
+		}
+	}
 }
 
-@media (max-width:450px){
 
-  html{
-    font-size: 50%;
-  }
 
-}
+/*<!--========================================================== -->
+                        <!--Mediaqueries end-->
+<!--========================================================== -->*/
