@@ -37,7 +37,7 @@ $color4:#121524;
 
 
 /*<!--========================================================== -->
-                        <!--Ajustes end-->
+                        <!--Ajustes start-->
 <!--========================================================== -->*/
 
 *{
@@ -133,7 +133,7 @@ nav ul li a:hover{
 
 .main {
   margin: 0 auto;
-  width: 60vw;
+  width: 80vw;
   height: 80vh;
   display: flex;
   /*flex-direction: row;*/
@@ -309,6 +309,85 @@ footer{
     .main img{
     display: grid;
     height: 350px; 
+    order: 1;
+    }
+}
+
+@media (max-width:600px) {
+
+    nav{
+        
+    }
+
+   
+    h1{
+        margin-left: .5rem;
+        font-size: 23px;
+    }
+
+   
+    .texto-main{
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .download-cv{font-size: 12px;
+    }
+
+     
+    
+    ul{
+        
+        width: 100%;
+        height: 40.8vh;
+        background-color: $background;
+        top: 10vh;
+        left: -100%;
+        text-align: center;
+        transition: width ;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        position: absolute;
+        z-index: 1;
+    }
+
+    nav ul li{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        border-bottom: solid .1rem rgba(201, 196, 196, 0.4) ;
+    }
+
+    .drawer{
+    
+    left: 90%;   
+    }
+
+    #ckbox:checked ~ .menu-box{
+        left: 0;
+    }
+
+     .main{
+        margin: 0 auto;
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .info-content{
+    grid-columne: 1/2;
+    order: 2;
+    margin-top: 20px;
+    }
+
+    .main img{
+    display: grid;
+    height: 250px; 
     order: 1;
     }
 }
