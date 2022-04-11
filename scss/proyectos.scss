@@ -1,5 +1,7 @@
 /*SCSS Proyectos*/
 
+
+
 /*<!--========================================================== -->
                         <!--Variables start-->
 <!--========================================================== -->*/
@@ -22,7 +24,6 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 /*<!--========================================================== -->
                         <!--Variables end-->
 <!--========================================================== -->*/
-
 
 
 
@@ -54,15 +55,10 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 	margin-left: auto;
 	margin-right: auto;
 	
-
-
 	.heading{
 	margin-bottom: 40px;
 	font-size: 43px;
 	}
-
-	
-	
 
   .box-container{
     @include grid(31rem);
@@ -101,7 +97,7 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
         transform: translateY(-100%);
         transition: .2s linear;
         border: 3px solid $color4;
-		border-radius: 5px;
+		    border-radius: 5px;
 
         h3{
           font-size: 30px;
@@ -165,9 +161,9 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
 @media (max-width:1020px) {
 
-    .body-proyectos{
+  .body-proyectos{
 	
-    .portfolio{
+  .portfolio{
 	margin-bottom: 70px;
 	margin-top: 50px;
 	text-align: center;
@@ -184,10 +180,9 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
   margin-left: auto;
   margin-right: auto;
- display: flex;
- flex-direction: column;
- align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
     .box{
 

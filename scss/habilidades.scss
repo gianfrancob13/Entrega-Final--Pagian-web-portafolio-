@@ -1,5 +1,7 @@
 /*SCSS Habilidades*/
 
+
+
 /*<!--========================================================== -->
                         <!--Variables start-->
 <!--========================================================== -->*/
@@ -45,7 +47,6 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 	margin-left: auto;
 	margin-right: auto;
 	
-
     @include grid(16rem);
 
     .box{
@@ -113,6 +114,18 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 	}
 	}
 	}
+
+  @media (max-width:600px) {
+
+  .skills{
+
+  .box-container{
+   display: flex;
+   flex-direction: column;
+   
+  }
+  }
+  }
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->

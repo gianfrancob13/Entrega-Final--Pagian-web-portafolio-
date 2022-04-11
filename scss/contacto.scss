@@ -1,23 +1,25 @@
 /*SCSS Contacto*/
 
+
+
 /*<!--========================================================== -->
                         <!--Variables start-->
 <!--========================================================== -->*/
 
-    $primary:#0E2C40;
-    $secundary:#2e4469;
-    $background:#35495e;
-    $black-text:rgb(61, 61, 61);
-    $white-text:#ffffff;
-    $button-hover:#38755a;
-    $color3:#EFBC75;
-    $color4:#121524;
-    $crimson : crimson;
-	$black:#0d0d0d;
-	$light-bg:#1a1a1a;
-	$white:#000000;
-	$light-color:#aaa;
-	$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+$primary:#0E2C40;
+$secundary:#2e4469;
+$background:#35495e;
+$black-text:rgb(61, 61, 61);
+$white-text:#ffffff;
+$button-hover:#38755a;
+$color3:#EFBC75;
+$color4:#121524;
+$crimson : crimson;
+$black:#0d0d0d;
+$light-bg:#1a1a1a;
+$white:#000000;
+$light-color:#aaa;
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 
 /*<!--========================================================== -->
                         <!--Variables end-->
@@ -58,20 +60,13 @@
         color:$color3;
       }
 
-
-
       p{
         font-size: 20px;
         line-height: 2;
         color:$light-color;
-        
-
       }
 
-      
-
       .share{
-
 
         margin-left: 10px;
 
@@ -155,7 +150,25 @@
 	}
 }
 
+@media (max-width:600px) {
 
+.contact{
+
+.row{
+
+form{
+  
+.inputBox input{
+      font-size: 12px;
+    }
+
+textarea{
+  font-size: 12px;
+}
+}
+}
+}
+}
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->
