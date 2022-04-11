@@ -82,21 +82,19 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
                         <!--Educacion start-->
 <!--========================================================== -->*/
 
+.title-educacion{
+  font-size: 43px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    }
+
 .education{
 
 	margin: 0 auto;
 	width: 80vw;
 	height: 50vh;
 	margin-bottom: 100px;
-
-	
-
-	.title-educacion{
-	font-size: 43px;
-  	text-align: center;
-  	margin-top: 50px;
-  	margin-bottom: 30px;
-  	}
 
   .box-container{
     display: flex;
@@ -214,6 +212,69 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
 	}
   	}
 }
+
+@media (max-width:600px) {
+
+.info-content-quiensoy{
+
+  .title-quiensoy{
+  font-size: 33px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 50px;
+  }
+
+  .txt-quiensoy{
+  text-align: center;
+  margin:5px;
+  font-size: 15px;
+}
+}
+  
+  .title-educacion{
+  font-size: 33px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  }
+
+  .education{
+
+  margin-left: 0;
+  margin-right: 0;
+
+  
+
+  .box-container{
+  margin-left: auto;
+  margin-right: auto;
+
+  .box{
+  text-align: center;
+  align-items: center;
+
+  span{
+  position: static;
+  justify-content: center;
+  }
+
+  i{
+  font-size: 15px;
+  display:none;
+  }
+
+  h3{
+  font-size: 23px;
+  }
+
+  p{
+  font-size: 15px;
+  }
+  }
+  }
+  }
+}
+
     
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->

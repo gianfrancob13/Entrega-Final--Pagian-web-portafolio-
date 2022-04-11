@@ -29,10 +29,6 @@
   .portfolio .heading {
     margin-bottom: 40px;
     font-size: 43px; }
-  .portfolio .img-proyectos {
-    height: 350px;
-    border: 3px solid #121524;
-    border-radius: 5px; }
   .portfolio .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
@@ -45,15 +41,16 @@
       border-radius: 5px; }
       .portfolio .box-container .box:hover .content {
         transform: translateY(0%); }
-      .portfolio .box-container .box img {
-        height: 100%;
+      .portfolio .box-container .box .img-proyectos {
+        height: 80%;
         width: 100%;
-        object-fit: cover; }
+        border: 3px solid #121524;
+        border-radius: 5px; }
       .portfolio .box-container .box .content {
         position: absolute;
         top: 0;
         left: 0;
-        height: 100%;
+        height: 80%;
         width: 100%;
         background: #1a1a1a;
         display: flex;
@@ -119,12 +116,36 @@
     z-index: 2; }
     .body-proyectos .portfolio .heading {
       font-size: 33px; }
-    .body-proyectos .portfolio .box-container .box h3 {
-      font-size: 23px; }
-    .body-proyectos .portfolio .box-container .box p {
-      font-size: 15px; }
-    .body-proyectos .portfolio .box-container .box a {
-      font-size: 12px; } }
+    .body-proyectos .portfolio .box-container {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .body-proyectos .portfolio .box-container .box h3 {
+        font-size: 23px; }
+      .body-proyectos .portfolio .box-container .box p {
+        font-size: 15px; }
+      .body-proyectos .portfolio .box-container .box a {
+        font-size: 12px; } }
+
+@media (max-width: 600px) {
+  .portfolio .box-container .img-proyectos {
+    height: 90%;
+    width: 70%; }
+  .portfolio .box-container .box {
+    height: 90%;
+    width: 70%; }
+    .portfolio .box-container .box .content {
+      height: 100%;
+      width: 100%; }
+      .portfolio .box-container .box .content h3 {
+        font-size: 20px; }
+      .portfolio .box-container .box .content p {
+        font-size: 15px;
+        padding: .2rem 0; }
+      .portfolio .box-container .box .content a {
+        font-size: 11px; } }
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->
@@ -228,16 +249,17 @@
 /*<!--========================================================== -->
                         <!--Educacion start-->
 <!--========================================================== -->*/
+.title-educacion {
+  font-size: 43px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
 .education {
   margin: 0 auto;
   width: 80vw;
   height: 50vh;
   margin-bottom: 100px; }
-  .education .title-educacion {
-    font-size: 43px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px; }
   .education .box-container {
     display: flex;
     flex-wrap: wrap; }
@@ -311,6 +333,41 @@
     font-size: 23px; }
   .education .box-container .box p {
     font-size: 20px; } }
+
+@media (max-width: 600px) {
+  .info-content-quiensoy .title-quiensoy {
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 50px; }
+  .info-content-quiensoy .txt-quiensoy {
+    text-align: center;
+    margin: 5px;
+    font-size: 15px; }
+  .title-educacion {
+    font-size: 33px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px; }
+  .education {
+    margin-left: 0;
+    margin-right: 0; }
+    .education .box-container {
+      margin-left: auto;
+      margin-right: auto; }
+      .education .box-container .box {
+        text-align: center;
+        align-items: center; }
+        .education .box-container .box span {
+          position: static;
+          justify-content: center; }
+        .education .box-container .box i {
+          font-size: 15px;
+          display: none; }
+        .education .box-container .box h3 {
+          font-size: 23px; }
+        .education .box-container .box p {
+          font-size: 15px; } }
 
 /*<!--========================================================== -->
                         <!--Mediaqueries end-->
@@ -630,7 +687,7 @@ footer {
     font-size: 12px; }
   ul {
     width: 100%;
-    height: 40.8vh;
+    height: 32.3vh;
     background-color: #35495e;
     top: 10vh;
     left: -100%;
@@ -642,13 +699,13 @@ footer {
     position: absolute;
     z-index: 1; }
   nav ul li {
-    padding: 1rem 0;
+    padding: .5rem 0;
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
     border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4); }
   .drawer {
-    left: 90%; }
+    left: 88%; }
   #ckbox:checked ~ .menu-box {
     left: 0; }
   .main {
